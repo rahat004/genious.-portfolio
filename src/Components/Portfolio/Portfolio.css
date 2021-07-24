@@ -1,0 +1,28 @@
+#portfolio {
+margin-bottom: 100px;
+}
+.portfolio h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.p-item-list{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.p-item img{
+    width: 200px;
+    height: 150px;
+}
+.p-item h5{
+    text-align: center;
+}
+.p-item a{
+    color: black;
+}
+/* @media screen and(max-width:768px) {
+    
+} */

@@ -1,0 +1,131 @@
+.topbar {
+    height: 70px;
+    align-items: center;
+    transition: all 1s ease;
+    position: fixed;
+    background-color: white;
+    width: 100%!important;
+    top: 0;
+    z-index: 2;
+}
+
+.logo {
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 10px 30px 10px 30px;
+}
+#active .logo a{
+    color: white;
+}
+
+.logo a {
+    color: black;
+}
+.itemContainer{
+ margin-top: 30px;
+}
+.itemContainer a{
+    color: black;
+    text-decoration: none;
+    margin-left: 20px;
+}
+#active .itemContainer a {
+    color: white;
+}
+.itemContainer a span{
+    margin-left: 5px;
+    font-weight: 500;
+}
+.right .hamburger{
+    width: 32px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.right .hamburger span{
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    transform-origin: left;
+    transition: all .5s ease;
+}
+.right{
+    display: flex;
+}
+.left{
+    display: flex;
+
+}
+#active{
+    background-color: burlywood;
+    color: white;
+}
+#active .hamburger span:first-child{
+    background-color: white;
+    transform: rotate(45deg);
+}
+#active .hamburger span:nth-child(2){
+    opacity: 0;
+}
+#active .hamburger span:last-child{
+    background-color: white;
+    transform: rotate(-45deg);
+}
+.col-4 {
+    justify-content: space-around;
+    max-width: 20.333333%!important;
+}
+
+
+
+@media screen and (max-width:915px) {
+    .itemContainer {
+        margin-top: 10px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .right {
+        margin-right: 30px;
+    }
+    .itemContainer {
+        font-size: 10px;
+        margin-top: 15px;
+    }
+    .logo {
+        font-size: 30px;
+        font-weight: 600;
+ 
+    }
+    
+    
+}
+
+@media screen and (max-width:425px) {
+    .logo {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 20px 0px 0px 30px;
+
+    }
+
+    .right .hamburger {
+        width: 25px;
+        height: 20px;
+        margin-top: 25px;
+    }
+    .col-2 {
+        max-width: 10.667% !important;
+    }
+    .itemContainer {
+        display: none;
+    }
+    .right .hamburger {
+        margin-top: 20px;
+    }
+}

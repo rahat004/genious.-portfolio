@@ -1,0 +1,10 @@
+*{
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+}
+.section{
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    width: 100%;
+}
